@@ -162,7 +162,7 @@ ITER_DCL_DALPHA= 250
 ```
 With this new setting the angle of attack design variable and the Cl constratint are indirectly introduced into the optimization problem without running an extra adjoint for the lift or grid deformation to account for the change in AoA.
 
-The first value in the parentheses is the variable type, which is 1 for a Hicks-Henne bump function. The second value is the scale of the variable (typically left as 1.0). The name between the vertical bars is the marker tag where the variable deformations will be applied. Only the airfoil surface will be deformed in this problem. The final two values in the parentheses specify whether the bump function is applied to the upper (1) or lower (0) side and the x-location of the bump between 0 and 1 (we assume a chord of 1.0 for the Hicks-Henne bumps), respectively. 
+The first value in the parentheses is the variable type, which is 30 for a Hicks-Henne bump function. The second value is the scale of the variable (typically left as 1.0). The name between the vertical bars is the marker tag where the variable deformations will be applied. Only the airfoil surface will be deformed in this problem. The final two values in the parentheses specify whether the bump function is applied to the upper (1) or lower (0) side and the x-location of the bump between 0 and 1 (we assume a chord of 1.0 for the Hicks-Henne bumps), respectively. 
 
 Note that there are many other types of design variables available in SU2, and each has their own specific input format. 3D design variables based on the free-form deformation approach (FFD) will be discussed in the next tutorial.
 
